@@ -34,7 +34,7 @@ class RestaurantServiceTest {
 
 
         assertThrows(restaurantNotFoundException.class,
-                ()->service.findRestaurantByName("French fries"));
+                ()->service.findRestaurantByName("paradise"));
 
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -64,7 +64,7 @@ class RestaurantServiceTest {
         restaurant.addToMenu("Sweet corn soup",119);
         restaurant.addToMenu("Vegetable lasagne", 269);
 
-        assertThrows(restaurantNotFoundException.class,()->service.removeRestaurant("Amelie's cafe"));
+        assertThrows(restaurantNotFoundException.class,()->service.removeRestaurant("Amelie's"));
     }
 
     @Test

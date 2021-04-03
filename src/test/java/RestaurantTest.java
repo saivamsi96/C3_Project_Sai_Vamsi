@@ -74,6 +74,18 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
 
+    @Test
+    public void  calculate_the_total_of_selected_items(){
+        LocalTime openingTime = LocalTime.parse("10:30:00");
+        LocalTime closingTime = LocalTime.parse("22:00:00");
+        restaurant=new Restaurant("chutey's","Hyderabad",openingTime,closingTime);
+        restaurant.addToMenu("Sweet corn soup",250);
+        restaurant.addToMenu("Vegetable lasagne", 250);
+        int calculatetotal= restaurant.total(restaurant.getMenu());
+        assertEquals(calculatetotal,500);
+
+    }
+
 
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }

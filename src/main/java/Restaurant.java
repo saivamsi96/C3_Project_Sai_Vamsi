@@ -75,4 +75,7 @@ public class Restaurant {
         return name;
     }
 
+    public int total(List<Item> list) {
+        return 0;
+    }
 }
