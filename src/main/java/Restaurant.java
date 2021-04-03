@@ -76,6 +76,11 @@ public class Restaurant {
     }
 
     public int total(List<Item> list) {
-        return 0;
+        int total = 0;
+        for(Item i: list){
+            total = total + i.getPrice();
+
+        }
+        return total;
     }
 }

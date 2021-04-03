@@ -78,7 +78,7 @@ class RestaurantTest {
     public void  calculate_the_total_of_selected_items(){
         LocalTime openingTime = LocalTime.parse("10:30:00");
         LocalTime closingTime = LocalTime.parse("22:00:00");
-        restaurant=new Restaurant("chutey's","Hyderabad",openingTime,closingTime);
+        restaurant=new Restaurant("chutney's","Hyderabad",openingTime,closingTime);
         restaurant.addToMenu("Sweet corn soup",350);
         restaurant.addToMenu("Vegetable lasagne", 250);
         int calculatetotal= restaurant.total(restaurant.getMenu());
