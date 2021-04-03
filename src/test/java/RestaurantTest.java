@@ -79,10 +79,10 @@ class RestaurantTest {
         LocalTime openingTime = LocalTime.parse("10:30:00");
         LocalTime closingTime = LocalTime.parse("22:00:00");
         restaurant=new Restaurant("chutey's","Hyderabad",openingTime,closingTime);
-        restaurant.addToMenu("Sweet corn soup",250);
+        restaurant.addToMenu("Sweet corn soup",350);
         restaurant.addToMenu("Vegetable lasagne", 250);
         int calculatetotal= restaurant.total(restaurant.getMenu());
-        assertEquals(calculatetotal,500);
+        assertEquals(calculatetotal,600);
 
     }
 
